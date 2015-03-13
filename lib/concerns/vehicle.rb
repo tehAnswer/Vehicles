@@ -1,12 +1,12 @@
-module Vehicle
+require_relative '../concerns/key_value_coding'
 
-  attr_accessor :wheelnum, :max_passengers, :model_num
+module Vehicle
+  include KeyValueCoding
+
+  attr_accessor :wheelnum, :max_passengers, :model_num, :manufacturer
 
   def initialize(hash)
-    super()
-    self.wheelnum = hash[:wheelnum]
-    self.max_passengers = hash[:max_passengers]
-    self.model_num = hash[:model_num]
+    super
   end
 
   def weapons?

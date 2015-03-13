@@ -1,15 +1,18 @@
+require_relative '../concerns/key_value_coding'
+
 module Strapped
+  include KeyValueCoding
+
+  attr_accessor :max_ammo, :remaining_ammo
+
+  def initialize(hash)
+    super
+  end
 
   def shoot!
   end
 
   def reload!
-  end
-
-  def remaining_ammo
-  end
-
-  def max_ammo
   end
 
   def weapons?
