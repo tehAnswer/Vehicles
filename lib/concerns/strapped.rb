@@ -5,10 +5,6 @@ module Strapped
 
   attr_accessor :max_ammo, :remaining_ammo
 
-  def initialize(hash)
-    super
-  end
-
   def shoot!
   end
 
