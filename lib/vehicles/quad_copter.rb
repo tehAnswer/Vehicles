@@ -1,0 +1,2 @@
+class QuadCopter
+end

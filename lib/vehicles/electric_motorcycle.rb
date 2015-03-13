@@ -1,0 +1,2 @@
+class ElectricMotorcycle
+end
