@@ -11,6 +11,6 @@ class Autobot
 
 
   def initialize(hash)
-    super(hash)
+    super
   end
 end
