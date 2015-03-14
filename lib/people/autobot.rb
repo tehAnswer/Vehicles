@@ -1,16 +1,10 @@
-require_relative '../concerns/vehicle'
-require_relative '../concerns/electric'
+require_relative '../concerns/electric_vehicle'
 require_relative '../concerns/strapped'
 require_relative '../concerns/living_form'
 
 class Autobot
-  include Vehicle
-  include Electric
+  include ElectricVehicle
   include Strapped
   include LivingForm
 
-
-  def initialize(hash)
-    super
-  end
 end
